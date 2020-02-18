@@ -1,0 +1,58 @@
+---
+title: "notes"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Issues with increased volatility
+
+*  @senate_excessive_2009.
+    + Even if an elevator is completely hedged—so that the elevator will have "locked in"" a gain regardless of the direction of the market—a steeply rising market can impose significant additional costs upon the elevator operator. In a rising market, grain elevators and merchants that have hedged by selling futures may be subject to margin calls from the exchanges to cover the loss in value of their “short” positions. These margin calls, which are made at the end of each trading day, require payments by the grain elevator or other party to the futures exchanges into a margin account. The amounts in the margin account are not recovered by the elevator until the short position is closed out—in this case, until the elevator sells its grain and terminates the hedge. If a grain elevator cannot make the requisite margin payments, the exchange will close out its position at the current market price, possibly causing further losses.
+    + In 2008, rising grain prices in the cash markets, together with rising margin calls, required many grain elevators to make much larger cash outlays than normal. The National Grain and Feed Association estimated that a typical grain elevator faced a 300% increase in hedging costs in 2008, compared to 2006 (National Grain and Feed Association, Effects of a Changed Marketplace on Elevators, Producers, document provided to the Subcommittee).
+
+
+
+## Stabilizing effect of speculation
+
+@schmidt_political_2015. 1970s: increase in commodity price volatility. Grains merchants established commodity brokerage businesses. Two advantages in futures markets that grant them a dominant position and control of sotrage facilities:
+    + Superior knowledge of global supply and demand conditions.
+    + Position limit exemptions as commercial participants.
+    
+@hieronymus_economics_1971: speculators should not be subject to position limits as they create a stabilizing counterbalance to the big grain firms.
+
+## Alternative measures of speculation
+
+*  Speculation ratio: $S_l / S_s$. $S_l$: speculative longs; $S_s$: speculative shorts.
+*  Total speculative load: $(S_l + S_s) / OI$. $S_l$: speculative longs; $S_s$: speculative shorts; $OI$: total open interest.
+
+## Alternative tests of speculation
+*  Vector autoregression (VAR)? 
+    + @stock_vector_2001: univariate autoregression is a single equation, single variable linear model where current value of a variable is explained by its own lagged values. In contrast, a VAR is a n-equation, n-vars linear model in which each var is in turn explained by its own lagged values as well as current and past values of the remaining n-1 variables. The main issue underlying most debates about VAR models is the appropriate specification based on economic theory, "Structural VARs require 'identifying assumptions' that allow correlations to be interpreted causally".
+    + See also @toda_vector_1993.
+*  @senate_excessive_2009. 
+    + Claim: since 2006, commodity index traders have held between 35 and 50% of the outstanding wheat contracts purchased (long open interest) on the Chicago exchange, and between about 20 and 30% of the outstanding wheat contracts purchased (long open interest) on the Kansas City exchange with this proportion climbing to over 60% for Chicago wheat and almost 40% for Kansas city wheat when normalizing by directional positions rather than total positions. The claim is that a significant proportion of open interets is held by spread traders who hold equal positions in two different contracts for the same commodity, buying one and selling the other. They hence hold a net neutral position and as such have a limited influence on market dynamics. It is to be expected that if nearly half of the holders of long open interest are pursuing a trading strategy for the buying and holding of wheat
+futures that is insensitive to the fundamentals of supply and demand in the cash market, then the wheat futures market will become increasingly reflective of that price-insensitive strategy and less reflective of the fundamentals of supply and demand in the cash market.
+    + Test: check if pricing power of commercial hedging pressure in the corresponding markets has diminished over the corresponding period.
+
+## Basis
+
+One major characteristic of well functioning hedging market: stability of the basis. Check volatility of the basis and comment accordingly. 
+See @hieronymus_economics_1971 (p. 150-153, 351), @peck_economic_1985 (p. 15), @working_hedging_1953 ("most hedging is done in the expectation of a change in spot-future price relations, the change that is reasonably to be expected being often indicated quite clearly by the current spot-future price relation"), @cootner_speculation_1967 ("In fact, in those cases where the basis is as volatile as the spot price of the commodity, the hedger moves naturally into holding inventories unhedged, i.e., into ordinary speculation, because there is no risk reduction from hedging"), @senate_excessive_2009 (p. 62)
+
+## Others
+
+*  @schmidt_political_2015. Position limits were enacted to ensure producers and consumers of commodities determined prices; not speculators. Can we check? Compare pricing power of corresponding pressures.
+*  @working_theory_1949. Prices are volatile when there is insufficient speculative liquidity to meet the needs of hedgers when their needs are high. When hedging needs are low or balanced and speculative positions dominate hedging positions, prices are (mainly) determined by speculative opinion.
+
+*  @senate_excessive_2009 (p. 142). 
+    + Higher futures prices made it more profitable for grain elevator operators to purchase grain in the cash market, place it into storage, and then hedge those grain purchases with the sale of relatively high-priced futures contracts than to engage in arbitrage transactions (buying wheat in the cash market, selling futures contracts, and then delivering the wheat) at contract expiration. When price spreads are near or above full carry, a grain elevator can recover more than the full cost of storing the grain. Witht the advent of index traders, this approach—often termed “cash and carry”—was more profitable than any other type of prudent investment strategy. Because only approved warehouses can make delivery under the futures contract, only these approved warehouses can directly engage in the type of arbitrage transactions that will help force convergence (i.e., buy wheat in the cash market, sell a futures contract, and deliver the wheat under the futures contract). For approved warehouses, it can be particularly profitable to engage in cash and carry transactions rather than arbitrage transactions because the cost of storage is so low. 
+    + The CME Rulebook sets forth the requirements for regular warehouses and shipping facilities. Among other requirements, the facility must be inspected by the Exchange, the USDA, and other governmental agencies; be provided with “modern improvements and appliances for the convenient and expeditious receiving, handling and shipping of product in bulk”; furnish accurate information to the Exchange; permit its books to be inspected; “not engage in unethical or inequitable practices”; and comply with the rules of the Exchange (CME Rulebook, Chap.7).
+
+
+
+

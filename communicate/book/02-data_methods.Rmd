@@ -1,0 +1,40 @@
+# Data and methods {#data-methods}
+
+We study Chicago Board of Trade (CBOT) corn, soybeans and soft red winter wheat (SRW) as well as Kansas City Board of Trade (KCBOT) hard red winter wheat (HRW). The futures contract market quotes as well as volume and open interest data are from Bloomberg wile spot market price time series are from the Minneapolis Grain Exchange (MGEX).  
+
+Futures prices are observed every trading day at close while the daily values for cash prices are constructed as the average of high and low prices for the day due to the lack of open and close quotes in the cash markets. We consider the front month futures contract until the first week of the maturity month at which date the position is switched to the next most liquid contract. For each commodity we define open interest (volume) as the sum of all traders’ positions (trading volume) for all contracts on the term structure up to a year ahead. We define the basis as the difference between the futures and cash (spot) price as follows:
+
+
+$$B_{i, t}=F_{i, t}-S_{i, t}$$
+$B_{i, t}\equiv$ basis for commodity \textit{i}, at time \textit{t}.  
+$F_{i, t}\equiv$ futures price for commodity \textit{i}, at time \textit{t}.  
+$S_{i, t}\equiv$ spot price for commodity \textit{i}, at time \textit{t}.  
+
+We observe the 1992-2007 period and define the 1992-2003 period as the pre-financialization phase and the 2003-2007 as the financialization phase (with the 2003 cut-off based on earlier studies^[Most earlier studies locate the onset of financialization around the 2003-2004 period [@basak_model_2016; @cheng_financialization_2014; @hamilton_effects_2015; @irwin_index_2011; @irwin_financialization_2012; @irwin_testing_2012; @tang_index_2012].]), and study the two periods independently.  
+
+For futures volatility we consider a set of estimators that includes the classic "close-to-close" as well as five range-based stochastic volatility estimators: Parkinson, Garman & Klass, Rogers & Satchell, Garman & Klass-Yang & Zhang and Yang & Zhang. The Parkinson estimator estimates the volatility of the underlying based on high and low prices. The Garman & Klass estimator assumes Brownian motion with zero drift and no opening jumps and is 7.4 times more efficient than the "close-to-close" estimator. The Rogers & Satchell estimator allows for non-zero drift, but assumes no opening jump while the Garman & Klass-Yang & Zhang estimator, a modified version of the Garman & Klass estimator allows for opening jumps. The Yang & Zhang has minimum estimation error, and is independent of drift and opening gaps. It can be interpreted as a weighted average of the Rogers & Satchell estimator, the "close-open" volatility, and the "open-close" volatility. For futures the results are presented for volatility when estimated using the classic "close-to-close" estimator, as it is the most commonly used, and the Yang & Zhang estimator as it has the minimum estimation error, with the rest of the results available from the authors upon request. For basis volatility, the lack of open and close quotes restricts the set to the classic "close-to-close" and the Parkinson estimators. Yet, a straightforward construction of the Parkinson estimator is unworkable because of the few occurrences of the zero value in the time series of the basis leading to undefined volatility observations. As a result, we define the Parkinson estimate of basis volatility as the difference between that of the futures and that of the spot.  
+
+We study the relationship between volatility, volume and open interest with a set of factor models that include combinations of the latter. We construct four one-factor models where volatility is the response and both contemporaneous and one-week lagged open interest and volume are in turn the explanatory variable. We also construct four two-factor models where volatility is the response and the explanatory variables are in turn, contemporaneous and one-week lagged open interest, contemporaneous and one-week lagged volume, open interest and volume as well as one-week lagged open interest and one-week lagged volume. We conclude with a four-factor model that includes all the above-mentioned as explanatory variables.  
+
+The weekly CFTC COT report’s format breaks down total open interest into three categories of traders, namely hedgers (commercial), speculators (non-commercial) and non-reportable with the latter gathering the remaining traders who do not fit in the previous two categories. This break down allows the construction of the Working's T index, a measure of excess speculation, as follows:  
+
+$$
+T_{i, t} =
+\left\{\begin{matrix}
+1+\frac{SS_{i, t}}{HS_{i, t}+HL_{i, t}} & if & HS_{i, t} \geq HL_{i, t}\\ 
+1+\frac{SL_{i, t}}{HS_{i, t}+HL_{i, t}} & if & HS_{i, t} < HL_{i, t}
+\end{matrix}\right.
+$$
+
+$T_{i, t}\equiv$ Working's T index for commodity \textit{i}, at time \textit{t}.  
+$SS_{i, t}\equiv$ number of speculative short positions for commodity \textit{i}, at time \textit{t}.  
+$SL_{i, t}\equiv$ number of speculative long positions for commodity \textit{i}, at time \textit{t}.  
+$HS_{i, t}\equiv$ number of short hedging positions for commodity \textit{i}, at time \textit{t}.  
+$HL_{i, t}\equiv$ number of long hedging positions for commodity \textit{i}, at time \textit{t}.  
+
+We refine the analysis with a set of one factor models where volatility is the response and total open interest, open interest of hedgers, open interest of speculators, volume and Working's T index are in turn the explanatory variable. We conclude with two four-factor models with the first one including the contemporaneous time series of all the above and the second one their one-week lagged version.
+
+We look deeper into the speculation issue with a careful Granger causality analysis. @phillips_testing_1990 showed that Granger causality testing can be unreliable in a context similar to financialization. We hence rely on a modified version of the procedure developed by @toda_statistical_1995 that accounts for non-stationary time series. We implement the analysis at the daily frequency with futures volatility as measured by the Yang & Zhang estimator, open interest and volume as well as at the weekly frequency where we also include open interest of hedgers and speculators separately.
+
+Robustness considerations lead us to implement the whole analysis above with a 1999 cut-off^[Some studies date the premise of financialization back to the very late 1990s/early 2000s [@bohl_does_2013; @stoll_commodity_2010; @buyuksahin_speculators_2014].]. The pattern of results is similar although not as pronounced as with the 2003 cut-off suggesting that the effects of financialization were strongest over the 2003-2007 period as suggested in earlier studies.  
+

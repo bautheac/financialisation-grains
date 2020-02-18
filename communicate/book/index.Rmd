@@ -1,0 +1,14 @@
+--- 
+title: "Financialization and Commodity Price Volatility: The Case of Grains"
+author: "Devraj Basu, Olivier Bauthéac, Ameeta Jaiswal Dale"
+date: "`r Sys.Date()`"
+bibliography: "C:/Users/yyb14214/Dropbox/research/literature/references.bib"
+biblio-style: apalike
+link-citations: yes
+site: bookdown::bookdown_site
+documentclass: book
+---
+
+# Abstract
+
+The early 2000s have witnessed a dramatic increase in long-only institutional investments in commodity markets. This surge and its accompanying effects are commonly referred to as the financialization of commodity markets. This paper studies the impact of this phenomenon on price volatility in the grain markets where we focus on CBOT corn, wheat & soybeans and KCBOT wheat. Our results suggest that increases in trading volume and open interest, a consequence of financialization, appear to have changed the nature of grains volatility and seem consistent with the model of @stein_informational_1987 and @goldstein_information_2015 where the entry of new traders could lower the information content of price for existing traders. Our findings further suggest that the increase in market depth has a generally destabilizing effect on grains volatility which provides some support for the concerns of regulators. However this destabilizing effect does not seem to be driven by the action of speculators. Our analysis is thus overall more supportive of @singleton_investor_2013 and @stein_informational_1987 in that disagreement and difference of opinion are more likely to have caused changes in the nature of grains volatility than excess speculation.

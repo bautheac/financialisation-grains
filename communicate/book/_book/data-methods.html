@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Data and methods | Financialization and Commodity Price Volatility: The Case of Grains</title>
+  <meta name="description" content="3 Data and methods | Financialization and Commodity Price Volatility: The Case of Grains" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Data and methods | Financialization and Commodity Price Volatility: The Case of Grains" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Data and methods | Financialization and Commodity Price Volatility: The Case of Grains" />
+  
+  
+  
+
+<meta name="author" content="Devraj Basu, Olivier Bauthéac, Ameeta Jaiswal Dale" />
+
+
+<meta name="date" content="2020-02-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="results.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://www.bautheac.com/research/financialization-grains/communicate/book/_book/index.html">Financialization: grains</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Abstract</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="data-methods.html"><a href="data-methods.html"><i class="fa fa-check"></i><b>3</b> Data and methods</a></li>
+<li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results &amp; discussion</a></li>
+<li class="chapter" data-level="5" data-path="conclusions.html"><a href="conclusions.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/bautheac/financialization-grains">Github</a></li>
+<li><a href="http://bautheac.com/index.html">Home</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Financialization and Commodity Price Volatility: The Case of Grains</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-methods" class="section level1">
+<h1><span class="header-section-number">3</span> Data and methods</h1>
+<p>We study Chicago Board of Trade (CBOT) corn, soybeans and soft red winter wheat (SRW) as well as Kansas City Board of Trade (KCBOT) hard red winter wheat (HRW). The futures contract market quotes as well as volume and open interest data are from Bloomberg wile spot market price time series are from the Minneapolis Grain Exchange (MGEX).</p>
+<p>Futures prices are observed every trading day at close while the daily values for cash prices are constructed as the average of high and low prices for the day due to the lack of open and close quotes in the cash markets. We consider the front month futures contract until the first week of the maturity month at which date the position is switched to the next most liquid contract. For each commodity we define open interest (volume) as the sum of all traders’ positions (trading volume) for all contracts on the term structure up to a year ahead. We define the basis as the difference between the futures and cash (spot) price as follows:</p>
+<p><span class="math display">\[B_{i, t}=F_{i, t}-S_{i, t}\]</span>
+<span class="math inline">\(B_{i, t}\equiv\)</span> basis for commodity , at time .<br />
+<span class="math inline">\(F_{i, t}\equiv\)</span> futures price for commodity , at time .<br />
+<span class="math inline">\(S_{i, t}\equiv\)</span> spot price for commodity , at time .</p>
+<p>We observe the 1992-2007 period and define the 1992-2003 period as the pre-financialization phase and the 2003-2007 as the financialization phase (with the 2003 cut-off based on earlier studies<a href="#fn23" class="footnote-ref" id="fnref23"><sup>23</sup></a>), and study the two periods independently.</p>
+<p>For futures volatility we consider a set of estimators that includes the classic “close-to-close” as well as five range-based stochastic volatility estimators: Parkinson, Garman &amp; Klass, Rogers &amp; Satchell, Garman &amp; Klass-Yang &amp; Zhang and Yang &amp; Zhang. The Parkinson estimator estimates the volatility of the underlying based on high and low prices. The Garman &amp; Klass estimator assumes Brownian motion with zero drift and no opening jumps and is 7.4 times more efficient than the “close-to-close” estimator. The Rogers &amp; Satchell estimator allows for non-zero drift, but assumes no opening jump while the Garman &amp; Klass-Yang &amp; Zhang estimator, a modified version of the Garman &amp; Klass estimator allows for opening jumps. The Yang &amp; Zhang has minimum estimation error, and is independent of drift and opening gaps. It can be interpreted as a weighted average of the Rogers &amp; Satchell estimator, the “close-open” volatility, and the “open-close” volatility. For futures the results are presented for volatility when estimated using the classic “close-to-close” estimator, as it is the most commonly used, and the Yang &amp; Zhang estimator as it has the minimum estimation error, with the rest of the results available from the authors upon request. For basis volatility, the lack of open and close quotes restricts the set to the classic “close-to-close” and the Parkinson estimators. Yet, a straightforward construction of the Parkinson estimator is unworkable because of the few occurrences of the zero value in the time series of the basis leading to undefined volatility observations. As a result, we define the Parkinson estimate of basis volatility as the difference between that of the futures and that of the spot.</p>
+<p>We study the relationship between volatility, volume and open interest with a set of factor models that include combinations of the latter. We construct four one-factor models where volatility is the response and both contemporaneous and one-week lagged open interest and volume are in turn the explanatory variable. We also construct four two-factor models where volatility is the response and the explanatory variables are in turn, contemporaneous and one-week lagged open interest, contemporaneous and one-week lagged volume, open interest and volume as well as one-week lagged open interest and one-week lagged volume. We conclude with a four-factor model that includes all the above-mentioned as explanatory variables.</p>
+<p>The weekly CFTC COT report’s format breaks down total open interest into three categories of traders, namely hedgers (commercial), speculators (non-commercial) and non-reportable with the latter gathering the remaining traders who do not fit in the previous two categories. This break down allows the construction of the Working’s T index, a measure of excess speculation, as follows:</p>
+<p><span class="math display">\[
+T_{i, t} =
+\left\{\begin{matrix}
+1+\frac{SS_{i, t}}{HS_{i, t}+HL_{i, t}} &amp; if &amp; HS_{i, t} \geq HL_{i, t}\\ 
+1+\frac{SL_{i, t}}{HS_{i, t}+HL_{i, t}} &amp; if &amp; HS_{i, t} &lt; HL_{i, t}
+\end{matrix}\right.
+\]</span></p>
+<p><span class="math inline">\(T_{i, t}\equiv\)</span> Working’s T index for commodity , at time .<br />
+<span class="math inline">\(SS_{i, t}\equiv\)</span> number of speculative short positions for commodity , at time .<br />
+<span class="math inline">\(SL_{i, t}\equiv\)</span> number of speculative long positions for commodity , at time .<br />
+<span class="math inline">\(HS_{i, t}\equiv\)</span> number of short hedging positions for commodity , at time .<br />
+<span class="math inline">\(HL_{i, t}\equiv\)</span> number of long hedging positions for commodity , at time .</p>
+<p>We refine the analysis with a set of one factor models where volatility is the response and total open interest, open interest of hedgers, open interest of speculators, volume and Working’s T index are in turn the explanatory variable. We conclude with two four-factor models with the first one including the contemporaneous time series of all the above and the second one their one-week lagged version.</p>
+<p>We look deeper into the speculation issue with a careful Granger causality analysis. <span class="citation">Phillips and Loretan (<a href="#ref-phillips_testing_1990">1990</a>)</span> showed that Granger causality testing can be unreliable in a context similar to financialization. We hence rely on a modified version of the procedure developed by <span class="citation">Toda and Yamamoto (<a href="#ref-toda_statistical_1995">1995</a>)</span> that accounts for non-stationary time series. We implement the analysis at the daily frequency with futures volatility as measured by the Yang &amp; Zhang estimator, open interest and volume as well as at the weekly frequency where we also include open interest of hedgers and speculators separately.</p>
+<p>Robustness considerations lead us to implement the whole analysis above with a 1999 cut-off<a href="#fn24" class="footnote-ref" id="fnref24"><sup>24</sup></a>. The pattern of results is similar although not as pronounced as with the 2003 cut-off suggesting that the effects of financialization were strongest over the 2003-2007 period as suggested in earlier studies.</p>
+
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-phillips_testing_1990">
+<p>Phillips, Peter C.B., and Mico Loretan. 1990. “Testing Covariance Stationarity Under Moment Condition Failure with an Application to Common Stock Returns.” Cowles Foundation for Research in Economics, Yale University. <a href="https://ideas.repec.org/p/cwl/cwldpp/947.html">https://ideas.repec.org/p/cwl/cwldpp/947.html</a>.</p>
+</div>
+<div id="ref-toda_statistical_1995">
+<p>Toda, Hiro Y., and Taku Yamamoto. 1995. “Statistical Inference in Vector Autoregressions with Possibly Integrated Processes.” <em>Journal of Econometrics</em> 66 (1): 225–50. <a href="https://doi.org/10.1016/0304-4076(94)01616-8">https://doi.org/10.1016/0304-4076(94)01616-8</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="23">
+<li id="fn23"><p>Most earlier studies locate the onset of financialization around the 2003-2004 period <span class="citation">(Basak and Pavlova <a href="#ref-basak_model_2016">2016</a>; Cheng and Xiong <a href="#ref-cheng_financialization_2014">2014</a><a href="#ref-cheng_financialization_2014">a</a>; Hamilton and Wu <a href="#ref-hamilton_effects_2015">2015</a>; Irwin and Sanders <a href="#ref-irwin_index_2011">2011</a>, <a href="#ref-irwin_financialization_2012">2012</a><a href="#ref-irwin_financialization_2012">b</a>, <a href="#ref-irwin_testing_2012">2012</a><a href="#ref-irwin_testing_2012">a</a>; Tang and Xiong <a href="#ref-tang_index_2012">2012</a>)</span>.<a href="data-methods.html#fnref23" class="footnote-back">↩</a></p></li>
+<li id="fn24"><p>Some studies date the premise of financialization back to the very late 1990s/early 2000s <span class="citation">(Bohl and Stephan <a href="#ref-bohl_does_2013">2013</a>; Stoll and Whaley <a href="#ref-stoll_commodity_2010">2010</a>; Büyükşahin and Robe <a href="#ref-buyuksahin_speculators_2014">2014</a>)</span>.<a href="data-methods.html#fnref24" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/bautheac/financialization-grains/edit/master/02-data_methods.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["book.pdf", "book.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
