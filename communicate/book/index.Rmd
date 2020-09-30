@@ -1,13 +1,20 @@
 --- 
 title: "Financialization and Commodity Price Volatility: The Case of Grains"
 author: "Devraj Basu, Olivier Bauthéac, Ameeta Jaiswal Dale"
-date: "`r Sys.Date()`"
-bibliography: "C:/Users/yyb14214/Dropbox/research/literature/references.bib"
+date: ""
+# bibliography: "C:/Users/yyb14214/Dropbox/research/literature/references.bib"
+bibliography: literature_files/references.bib
 biblio-style: apalike
 link-citations: yes
 site: bookdown::bookdown_site
 documentclass: book
 ---
+
+```{r, literature, include = FALSE}
+folder <- "literature_files"; dir.create(folder)
+download.file("https://www.dropbox.com/s/htnd7o9nnkk8ng8/references.bib?dl=1", paste(folder, "references.bib", sep = "/"))
+```
+
 
 # Abstract
 

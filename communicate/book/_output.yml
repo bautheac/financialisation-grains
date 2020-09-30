@@ -9,10 +9,10 @@ bookdown::gitbook:
         <li><a href="https://github.com/bautheac/financialization-grains">Github</a></li>
         <li><a href="http://bautheac.com/index.html">Home</a></li>
     edit: https://github.com/bautheac/financialization-grains/edit/master/%s
-bookdown::pdf_book:
-  includes:
-    in_header: preamble.tex
-  latex_engine: xelatex
-  citation_package: natbib
-  keep_tex: yes
-bookdown::epub_book: default
+# bookdown::pdf_book:
+#   includes:
+#     in_header: preamble.tex
+#   latex_engine: xelatex
+#   citation_package: natbib
+#   keep_tex: yes
+# bookdown::epub_book: default
