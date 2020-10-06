@@ -1,4 +1,4 @@
-# Data and methods {#data-methods}
+# Data and methods {#financialization-grains-data-methods}
 
 We study Chicago Board of Trade (CBOT) corn, soybeans and soft red winter wheat (SRW) as well as Kansas City Board of Trade (KCBOT) hard red winter wheat (HRW). The futures contract market quotes as well as volume and open interest data are from Bloomberg wile spot market price time series are from the Minneapolis Grain Exchange (MGEX).  
 

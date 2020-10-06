@@ -1,6 +1,9 @@
 bookdown::gitbook:
   split_by: "chapter"
   css: style.css
+  always_allow_html: true
+  includes:
+      after_body: disqus.html
   config:
     toc:
       before: |
