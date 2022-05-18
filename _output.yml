@@ -1,17 +1,19 @@
 bookdown::gitbook:
   split_by: "chapter"
-  css: style.css
+  css: others/style.css
   always_allow_html: true
-  includes:
-      after_body: disqus.html
+  # includes:
+  #     after_body: disqus.html
   config:
     toc:
       before: |
-        <li><a href="https://www.bautheac.com/research/financialization-grains/communicate/book/_book/index.html">Financialization: grains</a></li>
+        <li><a href="https://bautheac.github.io/financialisation-grains/">Financialisation: grains</a></li>
       after: |
-        <li><a href="https://github.com/bautheac/financialization-grains">Github</a></li>
-        <li><a href="http://bautheac.com/index.html">Home</a></li>
-    edit: https://github.com/bautheac/financialization-grains/edit/master/%s
+        <div id="links">
+          <a href="https://github.com/bautheac/financialisation-grains"><img src="others/github.png" alt="github"></a>
+          <a href="http://bautheac.com.s3-website.eu-west-2.amazonaws.com"><img src="others/home.png" alt="home"></a>
+        </div>
+    edit: https://github.com/bautheac/financialisation-grains/edit/master/%s
 # bookdown::pdf_book:
 #   includes:
 #     in_header: preamble.tex

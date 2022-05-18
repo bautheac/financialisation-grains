@@ -16,3 +16,13 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+#links {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#links img{
+  width: 75px;
+}
